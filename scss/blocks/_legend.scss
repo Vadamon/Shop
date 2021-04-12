@@ -1,0 +1,16 @@
+.legend{
+
+    &-title{
+    background-color: $registration-color;
+    width: 100%;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+    }
+
+    &-title__text{
+        @include font(24, 29px, bold, $dark-pink-color);
+        text-transform: uppercase;
+    } 
+}
+
