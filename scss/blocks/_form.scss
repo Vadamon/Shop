@@ -1,0 +1,136 @@
+.form{
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+     }
+
+     &__info__items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info__title{
+        @include font(16px, 19.2px, 300, $black-color);
+         margin-bottom: 20px;
+    }
+
+    &-sex{
+        display: flex;
+        width: 198px;
+        justify-content: space-between;
+        margin-top: 13px;
+        margin-bottom: 33px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__text{
+        width: 652px;
+    }
+    
+    &__text__title{
+        text-transform: uppercase;
+        @include font(24px, 29px, 300, $black-color);
+    }
+    
+    &__text__sub-title{
+        @include font(24px, 29px, 300, $black-color);
+        margin: 22px 0;
+    }
+
+    &__button-arrow{
+        padding-left: 20px;
+        fill: $dark-pink-color;
+        transition: .3s ease-in-out;
+    }
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+.radio-label{
+    font-size: 11px;
+    outline: none;
+}
+
+.radio-input{
+    height: 17px;
+    width: 17px;
+    color: $space-gray;
+}
+
+input[type='radio']:checked:before {
+    width: 8px;
+    height: 8px;
+    margin-left: 3.5px;
+    margin-top: 3.5px;
+    border-radius: 15px;
+    background-color: $dark-pink-color;
+    content: '';
+    display: inline-block;
+    border: 1px solid $space-gray;
+}
+
+.password__text{
+    @include font(13px, 16px, 300, $space-gray);
+    margin-top: -5px;
+}
+
+.button__form{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    width: 167px;
+    margin-top: 39px;
+    padding: 16px 29px 16px 20px;
+    @include font(14px, 17px, 400, $dark-pink-color);
+    border: 1px solid $dark-pink-color;
+    background: none;
+    text-transform: uppercase;
+    outline: 0;
+    transition: .3s ease-in-out;
+}
+
+.button__form:hover{
+    @include font(14px, 17px, 400, $white-color);
+    border: 1px solid $dark-pink-color;
+    background: $dark-pink-color;
+}
+
+.button__form:hover  .form__button-arrow{
+    fill: $registration-color;
+}
+
+.list{
+    list-style: none;
+    margin-left: 44px;
+}
+
+.item{
+    @include font(24px, 29px, 300, $night-black);
+    margin: 22px 0;
+    position: relative;
+}
+
+.item:before{
+    content: '';
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: 5px;
+  left: -44px;
+  background-image: url(../img/check.svg);
+  background-size: 20px 16px;
+}
+
+.info__input{
+    margin-bottom: 20px;
+    border: 1px solid $space-gray;
+    padding: 13px 17px;
+    outline: 0;
+}
+}
