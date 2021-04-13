@@ -43,6 +43,7 @@
     &__button-arrow{
         padding-left: 20px;
         fill: $dark-pink-color;
+        transition: .3s ease-in-out;
     }
 }
 .wrapper{
@@ -91,6 +92,7 @@ input[type='radio']:checked:before {
     background: none;
     text-transform: uppercase;
     outline: 0;
+    transition: .3s ease-in-out;
 }
 
 .button__form:hover{

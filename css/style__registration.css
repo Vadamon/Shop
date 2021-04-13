@@ -236,6 +236,7 @@ body {
 .form__button-arrow {
   padding-left: 20px;
   fill: #F16D7F;
+  transition: .3s ease-in-out;
 }
 
 .wrapper {
@@ -291,6 +292,7 @@ body {
   background: none;
   text-transform: uppercase;
   outline: 0;
+  transition: .3s ease-in-out;
 }
 
 .wrapper .button__form:hover {
