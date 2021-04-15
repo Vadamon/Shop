@@ -1,53 +1,53 @@
-.feature{
+.feature {
     background: $black-color;
     min-height: 341px;
 
 
-&-list{
+&-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     
 }
 
-&-item{
+&-item {
      width: 360px;
      padding-top: 103px;
 }
 
-&__img--car{
+&__img--car {
     background-image: url("../img/car.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 13%;
 }
 
-&__img--sales{
+&__img--sales {
     background-image: url("../img/sales.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 13%;
 }
 
-&__img--quality{
+&__img--quality {
     background-image: url("../img/quality.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 13%;
 }
 
-&__description{
+&__description {
     text-align: center;
     color: $white-color;
     margin-top: 63px;
 }
 
-&__title{
+&__title {
     @include font(20px, 24px, 400);
     margin-bottom: 16px;
 }
 
-&__text{
+&__text {
     @include font(14px, 17px, 300, $silver-color);
 }
 }

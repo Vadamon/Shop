@@ -23,7 +23,7 @@
     min-height: 75px;
 }
 
-&__title{
+&__title { 
     text-transform: uppercase;
     @include font(14px, 16.8px, bold, $night-black);
     margin-top: 37px;
@@ -31,14 +31,14 @@
    
 }
 
-&__sub-title{
+&__sub-title {
     @include font(14px, 16.8px, bold, $dark-pink-color);
     text-decoration: none;
     text-transform: uppercase;
    
 }
 
-&__sub-navigation-list{
+&__sub-navigation-list {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -47,14 +47,14 @@
     align-items:space-around;
 }
 
-&__sub-navigation-link{
+&__sub-navigation-link {
     @include font(14px, 17px, 400, $silver-color);
     text-decoration: none;
     display:inline-block;
     padding: 10px;
 }
 
-&__container-left{
+&__container-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +79,7 @@
     color: $white-color;
   } 
 
-  &__container-right{
+  &__container-right {
       width: 168px;
       display: flex;
       justify-content: space-between;

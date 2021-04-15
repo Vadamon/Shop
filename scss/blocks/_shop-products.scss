@@ -1,108 +1,118 @@
 .shop-products {
-    &{
+
+    & {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
     }
 
-    &-carts{
+    &-carts {
         margin-top: 96px;
-    }
 
-    &-cart-item {
-        min-width: 652px;
-        min-height: 306px;
-        display: flex;
-        margin-bottom: 40px;
-        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.123);
-    }
+     .carts-list {
 
-    &-cart-info-text{
-        margin-top: 22px;
-        margin-left: 31px;
-    }
+         .cart-item {
+                min-width: 652px;
+                min-height: 306px;
+                display: flex;
+                margin-bottom: 40px;
+                box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.123);
+           
+            .cart-info {
 
-    &-cart-title{
-        text-transform: uppercase;
-        @include font(24px, 29px, 400, $night-black);
-        width: 200px;
-        display: inline-block;
-    }
+                .cart {
+                       margin-top: 22px;
+                       margin-left: 31px;
 
-    &-delete{
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        margin-left: auto;
-        background: none;
-        border: none;
-        outline: none;
-        margin-top: 28px;
-        margin-right: 22px;
-    }
+                       &-title{
+                        text-transform: uppercase;
+                        @include font(24px, 29px, 400, $night-black);
+                        width: 200px;
+                        display: inline-block;
+                       
+                       }
 
-   &-cart-sub-title-price{
-        margin-top: 42px;
-        @include font(22px, 26.4px, 400, $gray)
-    }
+                    &-price {
+                        margin-top: 42px;
+                        @include font(22px, 26.4px, 400, $gray);
 
-    &-cart-price{
-        @include font(22px, 26.4px, 400, $dark-pink-color);
-    }
+                        &-value {
+                            @include font(22px, 26.4px, 400, $dark-pink-color);
+                
+                        }
+                    }
 
-    &-cart-color{
-        @include font(22px, 26.4px, 400, $gray);
+                    &-product-color {
+                        @include font(22px, 26.4px, 400, $gray);
+                
+                        &-value {
+                            @include font(22px, 26.4px, 400, $white-gray);
+                        }
+                    }
 
-        &-value{
-            @include font(22px, 26.4px, 400, $white-gray);
-        }
-    }
+                    &-product-size {
+                        @include font(22px, 26.4px, 400, $gray);
+                
+                        &-value {
+                            @include font(22px, 26.4px, 400, $white-gray);
+                        }
+                    }
 
-    &-cart-size{
-        @include font(22px, 26.4px, 400, $gray);
+                    &-quantity {
+                        @include font(22px, 26.4px, 400, $gray);
+                
+                        &-value {
+                            width: 55px;
+                            @include font(22px, 26.4px, 400, $white-gray);
+                            text-align: center;
+                        }
+                    }
+                }
+            }
 
-        &-value{
-            @include font(22px, 26.4px, 400, $white-gray);
-        }
-    }
+            &-delete {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                margin-left: auto;
+                background: none;
+                border: none;
+                outline: none;
+                margin-top: 28px;
+                margin-right: 22px;
+            }
+              
+         }
+      }
 
-    &-cart-quantity{
-        @include font(22px, 26.4px, 400, $gray);
-
-        &-value{
-            width: 55px;
-            @include font(22px, 26.4px, 400, $white-gray);
-            text-align: center;
-        }
-    }
-
-    &-cart-buttons{
+      .cart-buttons {
         margin-top: 72px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 144px;
-    }
 
-    &-button-clear{
-        font-family: Lato;
-        background: none;
-        border: 1px solid $space-gray;
-        outline: 0;
-        text-transform: uppercase;
-        padding: 16px 40px;
-        @include font(14px, 16px, 300, $night-black);
-    }
-
-    &-button-continue{
-        font-family: Lato;
-        border: 1px solid $space-gray;
-        text-transform: uppercase;
-        padding: 16px 40px;
-        @include font(14px, 16px, 300, $night-black);
-        text-decoration: none;
-    }
+        .button-clear {
+            font-family: Lato;
+            background: none;
+            border: 1px solid $space-gray;
+            outline: 0;
+            text-transform: uppercase;
+            padding: 16px 40px;
+            @include font(14px, 16px, 300, $night-black);
+        }
     
-    &-delivery{
+        .button-continue {
+            font-family: Lato;
+            border: 1px solid $space-gray;
+            text-transform: uppercase;
+            padding: 16px 40px;
+            @include font(14px, 16px, 300, $night-black);
+            text-decoration: none;
+        }
+    }
+ } 
+
+    &-delivery {
         margin-top: 113px;
     }
 
@@ -111,13 +121,13 @@
         flex-direction: column; 
     }
 
-    &__form-title{
+    &__form-title {
         text-transform: uppercase;
         @include font(16px, 19px, 300, $black-color);
         font-family: Lato;
     }
 
-    &__input{
+    &__form__input {
         width: 359px;
         height: 44px;
         margin-top: 21px;
@@ -127,19 +137,19 @@
         color: $night-black;
     }
 
-    &__form-country::placeholder{
+    &__form-country::placeholder {
         color: $gray-to-placeholder;
     }
 
-    &__form-state::placeholder{
+    &__form-state::placeholder {
         @include font(13px, 16px, 300, $black-color);
     }
 
-    &__form-zip::placeholder{
+    &__form-zip::placeholder {
         @include font(13px, 16px, 300, $black-color);
     }
 
-    &__form-submit{
+    &__form-submit {
         width: 110px;
         margin-top: 24px;
         background: none;
@@ -151,45 +161,46 @@
         font-family: Lato;
     }
 
-    &-checkout{
+    .delivery-checkout {
         margin-top: 70px;
         padding: 39px 40px;
         background: $silver;
     }
 
-    &-final-price{
+    .checkout-final-price {
         text-align: right;
     }
 
-    &-checkout-title{
+    .checkout-title {
         text-transform: uppercase;
         @include font(11px, 13px, normal,  $silver-gray);
 
-        &-price{
+        &-price {
             margin-left: 20px;
         }
     }
 
-    &-checkout-sub-title{
+    .checkout-sub-title {
         margin-top: 12px;
         text-transform: uppercase;
         @include font(16px, 19px, 300, $black-color);
         font-family: Lato;
 
-        &-price{
+        &-price {
             margin-left: 20px;
             @include font(16px, 19px, 700, $dark-pink-color);
 
         }
 
     }
-    hr{
+
+    hr {
         background: $blue-gray;
         margin-top: 21px;
         margin-bottom: 17px;
     }
 
-    &-checkout-button{
+    .checkout-button {
         padding: 15px 42px;
         text-transform: uppercase;
         background: none;
@@ -198,7 +209,7 @@
         transition: .3s ease-in-out;
     }
 
-    &-checkout-button:hover{
+    .checkout-button:hover {
        background: $dark-pink-color;
        color: $white-color;
     }

@@ -1,4 +1,4 @@
-.promotions{
+.promotions {
 
 &__list {
     margin: 0 0 63px;
@@ -25,11 +25,11 @@
     background-size: cover;
 }
 
-&__item--man{
+&__item--man {
     background-image: url("../img/promotions-man.jpg");
     background-size: cover;
 }
-&__item--kids{
+&__item--kids {
     background-image: url("../img/promotions-kids.jpg");
     background-size: cover;
 }
@@ -42,13 +42,13 @@
     width: 100%;
 }
 
-&__title{
+&__title {
     @include font(17px, 20px, 400);
     text-transform: uppercase;
     padding-bottom: 10px;
 }
 
-&__text{
+&__text {
     @include font(26px, none, 700, $dark-pink-color);
     text-transform: uppercase;
 }

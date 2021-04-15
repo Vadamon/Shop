@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style__cart.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
@@ -106,23 +106,21 @@
         </section>
         <section class="shop-products wrapper container">
             <div class="shop-products-carts">
-                <ul class="shop-products-carts-list">
-                    <li class="shop-products-cart-item">
+                <ul class="carts-list">
+                    <li class="cart-item">
                         <img src="./img/product-3.jpg" alt="product" width="262px" height="306px">
-                        <div class="shop-products-cart-info">
-                            <div class="shop-products-cart-info-text">
-                                <h4 class="shop-products-cart-title">mango people t-shirt</h4>
-                                <p class="shop-products-cart-sub-title-price">Price: <span
-                                        class="shop-products-cart-price">$300</span></p>
-                                <p class="shop-products-cart-color">Color: <span
-                                        class="shop-products-cart-color-value">Red</span></p>
-                                <p class="shop-products-cart-size">Size: <span
-                                        class="shop-products-cart-size-value">XL</span></p>
-                                <p class="shop-products-cart-quantity">Quantity: <input type="number" placeholder="2"
-                                        class="shop-products-cart-quantity-value"></p>
+                        <div class="cart-info">
+                            <div class="cart">
+                                <h4 class="cart-title">mango people t-shirt</h4>
+                                <p class="cart-price">Price: <span class="cart-price-value">$300</span></p>
+                                <p class="cart-product-color">Color: <span class="cart-product-color-value">Red</span>
+                                </p>
+                                <p class="cart-product-size">Size: <span class="cart-product-size-value">XL</span></p>
+                                <p class="cart-quantity">Quantity: <input type="number" placeholder="2"
+                                        class="cart-quantity-value"></p>
                             </div>
                         </div>
-                        <button class="shop-products-delete"><svg width="18" height="18" viewBox="0 0 18 18">
+                        <button class="cart-item-delete"><svg width="18" height="18" viewBox="0 0 18 18">
                                 <path d=" M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966
                                 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304
                                 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9
@@ -135,60 +133,57 @@
                                 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757" />
                             </svg></button>
                     </li>
-                    <li class="shop-products-cart-item">
+                    <li class="cart-item">
                         <img src="./img/product-7.jpg" alt="product" width="262px" height="306px">
-                        <div class=" shop-products-cart-info">
-                            <div class="shop-products-cart-info-text">
-                                <h4 class="shop-products-cart-title">mango people t-shirt</h4>
-                                <p class="shop-products-cart-sub-title-price">Price: <span
-                                        class="shop-products-cart-price">$300</span></p>
-                                <p class="shop-products-cart-color">Color: <span
-                                        class="shop-products-cart-color-value">Red</span></p>
-                                <p class="shop-products-cart-size">Size: <span
-                                        class="shop-products-cart-size-value">XL</span></p>
-                                <p class="shop-products-cart-quantity">Quantity: <input type="number" placeholder="2"
-                                        class="shop-products-cart-quantity-value"></p>
+                        <div class="cart-info">
+                            <div class="cart">
+                                <h4 class="cart-title">mango people t-shirt</h4>
+                                <p class="cart-price">Price: <span class="cart-price-value">$300</span></p>
+                                <p class="cart-product-color">Color: <span class="cart-product-color-value">Red</span>
+                                </p>
+                                <p class="cart-product-size">Size: <span class="cart-product-size-value">XL</span></p>
+                                <p class="cart-quantity">Quantity: <input type="number" placeholder="2"
+                                        class="cart-quantity-value"></p>
                             </div>
                         </div>
-                        <button class="shop-products-delete"><svg width="18" height="18" viewBox="0 0 18 18">
+                        <button class="cart-item-delete"><svg width="18" height="18" viewBox="0 0 18 18">
                                 <path d=" M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966
-                            1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304
-                            0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9
-                            6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571
-                            0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688
-                            0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0
-                            16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233
-                            18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18
-                            16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18
-                            16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757" />
+                                1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304
+                                0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9
+                                6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571
+                                0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688
+                                0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0
+                                16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233
+                                18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18
+                                16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18
+                                16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" fill="#575757" />
                             </svg></button>
                     </li>
                 </ul>
-                <div class="shop-products-cart-buttons">
-                    <button class="shop-products-button-clear">clear shopping cart</button>
-                    <a class="shop-products-button-continue" href="#">continue shopping</a>
+                <div class="cart-buttons">
+                    <button class="button-clear">clear shopping cart</button>
+                    <a class="button-continue" href="#">continue shopping</a>
                 </div>
             </div>
             <div class="shop-products-delivery">
                 <form class="shop-products__form" action="#">
                     <h5 class="shop-products__form-title">shipping adress</h5>
                     <input type="text" placeholder="Bangladesh" id="country"
-                        class="shop-products__input shop-products__form-country">
+                        class="shop-products__form__input shop-products__form-country">
                     <input type="text" placeholder="State" id="state"
-                        class="shop-products__input shop-products__form-state">
+                        class="shop-products__form__input shop-products__form-state">
                     <input type="text" placeholder="Postcode/Zip" id="zip"
-                        class="shop-products__input shop-products__form-zip">
+                        class="shop-products__form__input shop-products__form__form-zip">
                     <button class="shop-products__form-submit">get a quote</button>
                 </form>
-                <div class="shop-products-checkout">
-                    <div class="shop-products-final-price">
-                        <h3 class="shop-products-checkout-title">sub total <span
-                                class="shop-products-checkout-title-price">$900</span></h3>
-                        <h3 class="shop-products-checkout-sub-title">grand total<span
-                                class="shop-products-checkout-sub-title-price">$900</span></h3>
+                <div class="delivery-checkout">
+                    <div class="checkout-final-price">
+                        <h3 class="checkout-title">sub total <span class="checkout-title-price">$900</span></h3>
+                        <h3 class="checkout-sub-title">grand total<span class="checkout-sub-title-price">$900</span>
+                        </h3>
                     </div>
                     <hr>
-                    <button class="shop-products-checkout-button">proceed to checkout</button>
+                    <button class="checkout-button">proceed to checkout</button>
                 </div>
             </div>
         </section>

@@ -1,7 +1,7 @@
-.products{
+.products {
     margin-top: 97px;
  
- &__legend{
+ &__legend {
      text-align: center;
      font-size: 30px;
      margin-bottom: 6px;
@@ -9,7 +9,7 @@
      line-height: 36px;
  }
  
- &__text-legend{
+ &__text-legend {
      @include font(14px, 17px, 400, $silver-color);
      text-align: center;
      margin-bottom: 48px;
@@ -27,7 +27,7 @@
      margin-bottom: 30px;
  }
  
- &__item-overflow{
+ &__item-overflow {
    position: relative;
  }
  
@@ -62,7 +62,7 @@
    border: 1px solid $white-color;
  }
  
- &__button-cart__img{
+ &__button-cart__img {
    fill: $white-color;
  }
  
@@ -75,24 +75,24 @@
      padding: 25px 29px 20px 17px;
  }
  
- &__title{
+ &__title {
      margin-top: 25px;
      text-transform: uppercase;
      @include font(14px, 15px, 400, $night-black);
      margin-bottom: 12px;
  }
  
- &__text{
+ &__text {
     @include font(14px, 17px, 300, $silver-color);
      margin-bottom: 18px;
  }
  
- &__price{
+ &__price {
     @include font(16px, 20px, 400, $dark-pink-color);
      text-decoration: none;
  }
  
- &_button-more{
+ &_button-more {
      display: block;
      margin: 0 auto;
      padding: 13px 39px;
@@ -103,7 +103,7 @@
      transition: .3s ease-in-out;
  }
  
- &_button-more:hover{
+ &_button-more:hover {
      display: block;
      margin: 0 auto;
      padding: 13px 39px;

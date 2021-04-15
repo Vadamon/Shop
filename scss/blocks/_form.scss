@@ -1,22 +1,22 @@
-.form{
+.form {
 
-    &__info{
+    &__info {
         display: flex;
         flex-direction: column;
         width: 360px;
      }
 
-     &__info__items{
+     &__info__items {
         display: flex;
         flex-direction: column;
     }
 
-    &__info__title{
+    &__info__title {
         @include font(16px, 19.2px, 300, $black-color);
          margin-bottom: 20px;
     }
 
-    &-sex{
+    &-sex {
         display: flex;
         width: 198px;
         justify-content: space-between;
@@ -26,38 +26,38 @@
         align-items: flex-end;
     }
 
-    &__text{
+    &__text {
         width: 652px;
     }
     
-    &__text__title{
+    &__text__title {
         text-transform: uppercase;
         @include font(24px, 29px, 300, $black-color);
     }
     
-    &__text__sub-title{
+    &__text__sub-title {
         @include font(24px, 29px, 300, $black-color);
         margin: 22px 0;
     }
 
-    &__button-arrow{
+    &__button-arrow {
         padding-left: 20px;
         fill: $dark-pink-color;
         transition: .3s ease-in-out;
     }
 }
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 64px;
     padding-bottom: 96px;
 
-.radio-label{
+.radio-label {
     font-size: 11px;
     outline: none;
 }
 
-.radio-input{
+.radio-input {
     height: 17px;
     width: 17px;
     color: $space-gray;
@@ -75,12 +75,12 @@ input[type='radio']:checked:before {
     border: 1px solid $space-gray;
 }
 
-.password__text{
+.password__text {
     @include font(13px, 16px, 300, $space-gray);
     margin-top: -5px;
 }
 
-.button__form{
+.button__form {
    display: flex;
    align-items: center;
    justify-content: space-around;
@@ -95,28 +95,28 @@ input[type='radio']:checked:before {
     transition: .3s ease-in-out;
 }
 
-.button__form:hover{
+.button__form:hover {
     @include font(14px, 17px, 400, $white-color);
     border: 1px solid $dark-pink-color;
     background: $dark-pink-color;
 }
 
-.button__form:hover  .form__button-arrow{
+.button__form:hover  .form__button-arrow {
     fill: $registration-color;
 }
 
-.list{
+.list {
     list-style: none;
     margin-left: 44px;
 }
 
-.item{
+.item {
     @include font(24px, 29px, 300, $night-black);
     margin: 22px 0;
     position: relative;
 }
 
-.item:before{
+.item:before {
     content: '';
   width: 20px;
   height: 16px;
@@ -127,7 +127,7 @@ input[type='radio']:checked:before {
   background-size: 20px 16px;
 }
 
-.info__input{
+.info__input {
     margin-bottom: 20px;
     border: 1px solid $space-gray;
     padding: 13px 17px;
